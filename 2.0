@@ -1,0 +1,38 @@
+#include<stdio.h>
+void sum(int x)
+{
+  int j;
+
+   for(j=1;j<=x;j++)
+   printf("*");
+  
+
+}
+int main()
+{
+  int repeat,n,i,j,p[25];
+  scanf("%d",&repeat);
+  j=1;
+  while(j<=repeat)
+  {
+      scanf("%d",&n);
+  int k[6]={0};
+  for(i=0;i<n;i++){
+  
+  scanf("%d",&p[i]);
+  switch(p[i])
+  {
+    case 1:k[1]+=1;break;
+    case 2:k[2]+=1;break;
+    case 3:k[3]+=1;break;
+    case 4:k[4]+=1;break;
+    case 5:k[5]+=1;break;
+  }}
+    for(i=1;i<=5;i++)
+  {printf("%d:",i);
+     sum(k[i]);
+     printf("\n");}
+     j++;
+}
+  return 0;
+}
